@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    color: aliceblue;
+}
+
+:root{
+    --negro-1:#000000;
+    --negro-2:#0f0f0f;
+    --negro-3:#232323;
+    --negro-4:#343434;
+
+    --azul-1:#006666;
+    --azul-2:#008080;
+    --azul-3:#00cccccc;
+}

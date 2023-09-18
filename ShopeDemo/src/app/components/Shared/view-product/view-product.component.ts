@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-product.component.css']
 })
 export class ViewProductComponent {
-
+  classOn:String="VProductOn";
+  closeClick(){
+    this.classOn = "VProductOff";
+  }
 }

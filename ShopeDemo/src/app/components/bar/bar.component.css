@@ -1,0 +1,86 @@
+.Bar{
+    margin: 1vh;
+    height: 5vh;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+    .ULeft{
+        border-radius: 1vh 0 0 1vh;
+        background-color: var(--negro-3); 
+        flex: 3;
+        list-style: none;
+        display: flex;
+        height: 100%;
+    }
+        .ULeft li{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ULeft  a{
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.5s ease-in-out;
+            border-radius: 1vh;
+        }
+        .ULeft a:hover{
+            background-color: var(--negro-4);
+            border-radius: 1vh;
+        }
+    .Logo{
+        flex: 2;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--negro-3); 
+    }
+    .URight{
+        background-color: var(--negro-3); 
+        border-radius: 0 1vh 1vh 0;
+        flex: 3;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+    }
+        .URight li{
+            width: 20%;
+            height: 100%;
+            display: flex;
+        }
+        .URight a{
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1vh;
+            transition: background 0.5s ease-in-out;
+        }
+        .URight button{
+            width: 60%;
+            height: 100%;
+            border: none;
+            background-color: var(--negro-3);
+            border-radius: 1vh;
+            transition: background 0.5s ease-in-out;
+        }
+        .URight button:hover{
+            background-color: var(--negro-4);
+            border-radius: 1vh;
+        }
+        .URight a:hover{
+            background-color: var(--negro-4);
+            border-radius: 1vh;
+        }
