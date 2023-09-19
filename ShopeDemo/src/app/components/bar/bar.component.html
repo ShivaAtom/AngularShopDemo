@@ -10,7 +10,7 @@
     <ul class="URight">
         <li><a (click)="clickToggleS()">Search</a></li>
         <li><a href="">Login</a></li>
-        <li><button (click)="clickToggleA()">#</button></li>
+        <li><button (click)="clickToggleA()"># {{(this.countCar$|async)}}</button></li>
     </ul>
 </nav>
 <app-aside-car [dataA]="this.classA"></app-aside-car>

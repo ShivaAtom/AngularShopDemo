@@ -1,7 +1,9 @@
 <section class="Head" id="Head">
     <section class="IProduct">
         <div class="GalleryPH">
-            Imagenes de los productos
+            <ng-container *ngFor="let ele of (this.dataList|async)">
+                <div (click)="clickImg(ele.id)"></div>
+            </ng-container>
         </div>
         <div class="CIP">
             <div class="InfoPH">

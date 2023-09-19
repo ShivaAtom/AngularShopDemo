@@ -3,12 +3,12 @@
         <h1>Car</h1>
    </div> 
    <div class="AGalleryP">
-        <ng-container >
-            <ng-container >
+        <ng-container *ngFor="let ele of (this.dataList|async)">
+            <ng-container *ngIf="ele.car > 0">
                 <div class="MCardDP">
-                    <div class="CountDP">1</div>
-                    <div class="NameDP"></div>
-                    <button>Borrar</button>
+                    <div class="CountDP">{{ele.car}}</div>
+                    <div class="NameDP">{{ele.pro.name}}</div>
+                    <button (click)="clickMenosCar(ele.id)">Borrar</button>
                 </div>
             </ng-container>
         </ng-container>

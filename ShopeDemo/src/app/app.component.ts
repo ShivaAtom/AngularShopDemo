@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { dbFake } from './DB/baseFake';
+import { MachineService } from './services/machine.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ShopeDemo';
+  constructor(private ser:MachineService){
+    ser.updateList = dbFake;
+  }
 }

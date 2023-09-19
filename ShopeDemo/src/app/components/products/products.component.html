@@ -8,14 +8,14 @@
             <div class="FilterPS"></div>
         </aside>
         <section class="GalleryPS">
-            <ng-container >
+            <ng-container *ngFor="let ele of (this.dataList|async)">
                 <div class="CardS">
                     <img (click)="clickButonIP()" src="" alt="" class="ImgGS">
                     <div class="InfoCS">
-                        <h1>Producto 1</h1>
-                        <h2>Precio</h2>
+                        <h1>{{ele.pro.name}}</h1>
+                        <h2>{{ele.pro.prec}}</h2>
                     </div>
-                    <button>Agregar</button>
+                    <button (click)="clickAgregarCar(ele.id)">Agregar</button>
                 </div>
             </ng-container>
         </section>

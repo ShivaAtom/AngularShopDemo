@@ -29,6 +29,12 @@
             .GalleryPH div{
                 background-color: var(--negro-4);
                 border-radius: 1vh;
+                transform: scale(1);
+                transition: transform 0.2s ease-in-out;
+            }
+            .GalleryPH div:hover{
+                transform: scale(1.03) translateY(-0.5vh);
+                transition: transform 0.2s ease-in-out;
             }
         .CIP{
             flex: 1;

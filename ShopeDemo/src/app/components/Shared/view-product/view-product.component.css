@@ -1,12 +1,12 @@
 .VProductOn{
-    height: 89vh;
+    height: 90vh;
     width: 95%;
     background-color: var(--negro-2);
     position: fixed;
     z-index: 14;
     display: flex;
-    padding: 13vh;
-    gap: 7vh;
+    padding: 12vh;
+    gap: 2vh;
     border-radius: 2vh;
     transform: translateX(5vh) translateY(8vh);
     transition: transform 0.8s ease-in-out;
@@ -18,8 +18,8 @@
     position: fixed;
     z-index: 14;
     display: flex;
-    padding: 13vh;
-    gap: 7vh;
+    padding: 12vh;
+    gap: 2vh;
     border-radius: 2vh;
     transform: translateX(-205vh) translateY(8vh);
     transition: transform 0.8s ease-in-out;
@@ -70,8 +70,8 @@
             }
 .Close{
     position: absolute;
-    right: 6vh;
-    top: 4vh;
+    right: 3vh;
+    top: 2.5vh;
     font-size: 4vh;
     transform: scale(1);
     transition: transform 0.2s ease-in-out;
