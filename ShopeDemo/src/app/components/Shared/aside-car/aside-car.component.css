@@ -3,7 +3,7 @@
     height: 90vh;
     background-color: var(--negro-2);
     position: fixed;
-    z-index: 9;
+    z-index: 12;
     right: 0;
     top: 5vh;
     border-radius: 1vh;
@@ -20,7 +20,7 @@
     height: 90vh;
     background-color: var(--negro-2);
     position: fixed;
-    z-index: 9;
+    z-index: 12;
     top: 5vh;
     border-radius: 1vh;
     margin: 2.5vh;

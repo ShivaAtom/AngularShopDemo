@@ -8,11 +8,11 @@
         <div class="Imagen"></div>
     </div>
     <ul class="URight">
-        <li><a href="">Search</a></li>
+        <li><a (click)="clickToggleS()">Search</a></li>
         <li><a href="">Login</a></li>
-        <li><button>#</button></li>
+        <li><button (click)="clickToggleA()">#</button></li>
     </ul>
 </nav>
-<app-aside-car></app-aside-car>
-<app-search></app-search>
-<app-view-product></app-view-product>
+<app-aside-car [dataA]="this.classA"></app-aside-car>
+<app-search [dataS]="this.classS"></app-search>
+<app-view-product ></app-view-product>

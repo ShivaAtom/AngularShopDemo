@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-aside-car',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./aside-car.component.css']
 })
 export class AsideCarComponent {
-
+  @Input() dataA!:String;
 }

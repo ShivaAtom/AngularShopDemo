@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { ToggleService } from 'src/app/services/toggle.service';
 
 @Component({
   selector: 'app-view-product',
@@ -6,8 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-product.component.css']
 })
 export class ViewProductComponent {
-  classOn:String="VProductOn";
-  closeClick(){
-    this.classOn = "VProductOff";
+  classOn$!:Observable<String>;
+
+  constructor(private ser:ToggleService){
+    this.classOn$ = ser.viewProductGet;
   }
+  closeClick(){this.ser.viewProductSet="VProductOff"}
 }

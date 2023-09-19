@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./bar.component.css']
 })
 export class BarComponent {
-
+  classS:String="SCOff";
+  classA:String="ACarOff"
+  clickToggleS(){ this.classS=="SCOff"?this.classS="SCOn":this.classS="SCOff"}
+  clickToggleA(){ this.classA=="ACarOff"?this.classA="ACarOn":this.classA="ACarOff"}
 }

@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SearchComponent } from './components/Shared/search/search.component';
 import { ViewProductComponent } from './components/Shared/view-product/view-product.component';
 import { AsideCarComponent } from './components/Shared/aside-car/aside-car.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AsideCarComponent } from './components/Shared/aside-car/aside-car.compo
     SearchComponent,
     ViewProductComponent,
     AsideCarComponent,
+    CategoriesComponent,
   ],
   imports: [
     BrowserModule
